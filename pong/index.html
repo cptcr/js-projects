@@ -19,11 +19,22 @@
       color: #fff;
       margin-top: 20px;
     }
+    #controls {
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
   <canvas id="ca" width="720" height="480" style="background-color: #000000;"></canvas>
   <div id="score">Player 1: 0 - Player 2: 0</div>
+  <div id="controls">
+    <span style="color: #ccc;">Controls:</span><br>
+    <span style="color: #fff;">Player 1: W (up), S (down)</span><br>
+    <span style="color: #fff;">Player 2: ↑ (up), ↓ (down)</span>
+  </div>
   <script>
     let ctx = ca.getContext('2d');
     let p1 = 80;
